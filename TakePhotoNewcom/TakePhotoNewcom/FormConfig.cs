@@ -20,6 +20,10 @@ namespace TakePhotoNewcom
         static string keyUsuario = "Usuario";
         static string keyPass = "Pass";
         static string keyBancoDados = "BancoDados";
+        static string keyRstp = "Rstp";
+        static string keyParamFoto = "ParamFoto";
+        static string keyUserCamera = "UserCamera";
+        static string keyPassCamera = "PassCamera";
 
         static string autenticacaoWindows = "Modo Windows";
         static string autenticacaoSQL = "Modo SQL Server";
@@ -31,6 +35,8 @@ namespace TakePhotoNewcom
             Thread threadStartPage = new Thread(startPage);
             threadStartPage.Start();
 
+            
+
             circularProgressBarServidor.Value = 0;
             circularProgressBarServidor.Minimum = 0;
             circularProgressBarServidor.Maximum = 100;
@@ -40,11 +46,51 @@ namespace TakePhotoNewcom
             string usuario = modifyRegistry.Read(keyUsuario);
             string pass = modifyRegistry.Read(keyPass);
             string bancoDados = modifyRegistry.Read(keyBancoDados);
+            string rtsp = modifyRegistry.Read(keyRstp);
+            string paramFoto = modifyRegistry.Read(keyParamFoto);
+            string userCamera = modifyRegistry.Read(keyUserCamera);
+            string passCamera = modifyRegistry.Read(keyPassCamera);
 
             comboBoxAutenticacao.Items.Add(autenticacaoWindows);
             comboBoxAutenticacao.Items.Add(autenticacaoSQL);
 
             textBoxLocalFoto.Text = localFoto;
+
+            if (userCamera != null)
+            {
+                textBoxUserCamera.Text = userCamera;
+            }
+            else
+            {
+                textBoxUserCamera.Text = "Admin";
+            }
+
+            if (passCamera != null)
+            {
+                textBoxPasswordCamera.Text = passCamera;
+            }
+            else
+            {
+                textBoxPasswordCamera.Text = "Newcomlab2015";
+            }
+
+            if (paramFoto != null)
+            {
+                textBoxParamFoto.Text = paramFoto;
+            }
+            else
+            {
+                textBoxParamFoto.Text = "http://admin:Newcomlab@192.168.1.64/ISAPI/Streaming/channels/101/picture";
+            }
+
+            if (rtsp != null)
+            {
+                textBoxRtsp.Text = rtsp;
+            }
+            else
+            {
+                textBoxRtsp.Text = "rtsp://admin:Newcomlab2015@192.168.1.64:554/";
+            }
 
 
             if (autenticacao != null)
@@ -157,15 +203,18 @@ namespace TakePhotoNewcom
 
         private void buttonSalvar_Click(object sender, EventArgs e)
         {
-            if (textBoxLocalFoto.Text == null && textBoxBDName.Text == null && comboBoxAutenticacao.SelectedItem.ToString() == "Modo SQL Server")
+            if (textBoxLocalFoto.Text != null && textBoxBDName.Text != null)
             {
                 modifyRegistry.Write(keyLocalFoto, textBoxLocalFoto.Text);
                 modifyRegistry.Write(keyServidor, comboBoxInstancia.SelectedItem);
                 modifyRegistry.Write(keyAutenticacao, comboBoxAutenticacao.SelectedItem);
                 modifyRegistry.Write(keyUsuario, textBoxUsuario.Text);
-                modifyRegistry.Write(keyUsuario, textBoxUsuario.Text);
                 modifyRegistry.Write(keyPass, textBoxSenha.Text);
                 modifyRegistry.Write(keyBancoDados, textBoxBDName.Text);
+                modifyRegistry.Write(keyRstp, textBoxRtsp.Text);
+                modifyRegistry.Write(keyParamFoto, textBoxParamFoto.Text);
+                modifyRegistry.Write(keyPassCamera, textBoxPasswordCamera.Text);
+                modifyRegistry.Write(keyUserCamera, textBoxUserCamera.Text);
 
                 this.Close();
             }

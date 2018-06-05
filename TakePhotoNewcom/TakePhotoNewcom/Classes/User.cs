@@ -60,7 +60,7 @@ namespace TakePhotoNewcom.Classes
 
                 if (sqlConnection != null)
                 {
-                    string sql = "SELECT n_identificador, nome, rg FROM pessoas";
+                    string sql = "SELECT id, n_identificador, nome, rg FROM pessoas";
                     SqlCommand cmd = sqlConnection.CreateCommand();
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = sql;

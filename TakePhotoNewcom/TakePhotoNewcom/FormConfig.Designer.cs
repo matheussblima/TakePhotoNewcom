@@ -45,6 +45,14 @@
             this.timerProgresseBarServidor = new System.Windows.Forms.Timer(this.components);
             this.comboBoxAutenticacao = new System.Windows.Forms.ComboBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxRtsp = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxParamFoto = new System.Windows.Forms.TextBox();
+            this.textBoxUserCamera = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxPasswordCamera = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +79,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 140);
+            this.label4.Location = new System.Drawing.Point(16, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 20);
             this.label4.TabIndex = 3;
@@ -81,7 +89,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 181);
+            this.label5.Location = new System.Drawing.Point(16, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 20);
             this.label5.TabIndex = 4;
@@ -91,7 +99,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 222);
+            this.label6.Location = new System.Drawing.Point(16, 341);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 20);
             this.label6.TabIndex = 5;
@@ -101,7 +109,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 263);
+            this.label7.Location = new System.Drawing.Point(16, 382);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 20);
             this.label7.TabIndex = 6;
@@ -111,7 +119,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 304);
+            this.label8.Location = new System.Drawing.Point(16, 423);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(192, 20);
             this.label8.TabIndex = 7;
@@ -126,21 +134,21 @@
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(214, 225);
+            this.textBoxUsuario.Location = new System.Drawing.Point(214, 344);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(201, 20);
             this.textBoxUsuario.TabIndex = 12;
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(214, 266);
+            this.textBoxSenha.Location = new System.Drawing.Point(214, 385);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.Size = new System.Drawing.Size(201, 20);
             this.textBoxSenha.TabIndex = 13;
             // 
             // textBoxBDName
             // 
-            this.textBoxBDName.Location = new System.Drawing.Point(214, 304);
+            this.textBoxBDName.Location = new System.Drawing.Point(214, 423);
             this.textBoxBDName.Name = "textBoxBDName";
             this.textBoxBDName.Size = new System.Drawing.Size(201, 20);
             this.textBoxBDName.TabIndex = 14;
@@ -149,7 +157,7 @@
             // 
             this.comboBoxInstancia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxInstancia.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBoxInstancia.Location = new System.Drawing.Point(214, 138);
+            this.comboBoxInstancia.Location = new System.Drawing.Point(214, 257);
             this.comboBoxInstancia.Name = "comboBoxInstancia";
             this.comboBoxInstancia.Size = new System.Drawing.Size(201, 21);
             this.comboBoxInstancia.TabIndex = 15;
@@ -196,7 +204,7 @@
             // 
             this.comboBoxAutenticacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxAutenticacao.FormattingEnabled = true;
-            this.comboBoxAutenticacao.Location = new System.Drawing.Point(214, 183);
+            this.comboBoxAutenticacao.Location = new System.Drawing.Point(214, 302);
             this.comboBoxAutenticacao.Name = "comboBoxAutenticacao";
             this.comboBoxAutenticacao.Size = new System.Drawing.Size(201, 21);
             this.comboBoxAutenticacao.TabIndex = 17;
@@ -205,7 +213,7 @@
             // buttonSalvar
             // 
             this.buttonSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSalvar.Location = new System.Drawing.Point(258, 380);
+            this.buttonSalvar.Location = new System.Drawing.Point(258, 471);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(106, 33);
             this.buttonSalvar.TabIndex = 18;
@@ -213,11 +221,88 @@
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F);
+            this.label9.Location = new System.Drawing.Point(16, 109);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 20);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "RTSP:";
+            // 
+            // textBoxRtsp
+            // 
+            this.textBoxRtsp.Location = new System.Drawing.Point(214, 109);
+            this.textBoxRtsp.Name = "textBoxRtsp";
+            this.textBoxRtsp.Size = new System.Drawing.Size(201, 20);
+            this.textBoxRtsp.TabIndex = 21;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F);
+            this.label10.Location = new System.Drawing.Point(16, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(115, 20);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Parametro Foto:";
+            // 
+            // textBoxParamFoto
+            // 
+            this.textBoxParamFoto.Location = new System.Drawing.Point(214, 150);
+            this.textBoxParamFoto.Name = "textBoxParamFoto";
+            this.textBoxParamFoto.Size = new System.Drawing.Size(201, 20);
+            this.textBoxParamFoto.TabIndex = 23;
+            // 
+            // textBoxUserCamera
+            // 
+            this.textBoxUserCamera.Location = new System.Drawing.Point(214, 186);
+            this.textBoxUserCamera.Name = "textBoxUserCamera";
+            this.textBoxUserCamera.Size = new System.Drawing.Size(201, 20);
+            this.textBoxUserCamera.TabIndex = 24;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F);
+            this.label3.Location = new System.Drawing.Point(16, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 20);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Usuário Camera:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F);
+            this.label11.Location = new System.Drawing.Point(16, 220);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(129, 20);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Password Camera:";
+            // 
+            // textBoxPasswordCamera
+            // 
+            this.textBoxPasswordCamera.Location = new System.Drawing.Point(214, 222);
+            this.textBoxPasswordCamera.Name = "textBoxPasswordCamera";
+            this.textBoxPasswordCamera.PasswordChar = '*';
+            this.textBoxPasswordCamera.Size = new System.Drawing.Size(201, 20);
+            this.textBoxPasswordCamera.TabIndex = 26;
+            // 
             // FormConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 425);
+            this.ClientSize = new System.Drawing.Size(577, 520);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.textBoxPasswordCamera);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBoxUserCamera);
+            this.Controls.Add(this.textBoxParamFoto);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBoxRtsp);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.comboBoxAutenticacao);
             this.Controls.Add(this.circularProgressBarServidor);
@@ -259,5 +344,13 @@
         private System.Windows.Forms.Timer timerProgresseBarServidor;
         private System.Windows.Forms.ComboBox comboBoxAutenticacao;
         private System.Windows.Forms.Button buttonSalvar;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxRtsp;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxParamFoto;
+        private System.Windows.Forms.TextBox textBoxUserCamera;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBoxPasswordCamera;
     }
 }

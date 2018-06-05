@@ -34,13 +34,15 @@
             this.configuraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.circularProgressBar = new CircularProgressBar.CircularProgressBar();
             this.label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.circularProgressBar = new CircularProgressBar.CircularProgressBar();
+            this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -53,7 +55,7 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Right;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configuraçãoToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(628, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(813, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(97, 430);
             this.menuStrip1.TabIndex = 1;
@@ -64,7 +66,7 @@
             this.configuraçãoToolStripMenuItem.Name = "configuraçãoToolStripMenuItem";
             this.configuraçãoToolStripMenuItem.Size = new System.Drawing.Size(84, 19);
             this.configuraçãoToolStripMenuItem.Text = "Configuração";
-            this.configuraçãoToolStripMenuItem.Click += new System.EventHandler(this.configuraçãoToolStripMenuItem_Click);
+            this.configuraçãoToolStripMenuItem.Click += new System.EventHandler(this.configuraçãoToolStripMenuItem_Click_1);
             // 
             // dataGridView
             // 
@@ -80,6 +82,7 @@
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(725, 350);
             this.dataGridView.TabIndex = 2;
+            this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
             this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView_SelectionChanged);
             // 
             // panelHeader
@@ -90,8 +93,39 @@
             this.panelHeader.Controls.Add(this.pictureBox1);
             this.panelHeader.Location = new System.Drawing.Point(0, 25);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(725, 56);
+            this.panelHeader.Size = new System.Drawing.Size(931, 56);
             this.panelHeader.TabIndex = 3;
+            // 
+            // circularProgressBar
+            // 
+            this.circularProgressBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar.AnimationSpeed = 500;
+            this.circularProgressBar.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.circularProgressBar.InnerMargin = 2;
+            this.circularProgressBar.InnerWidth = -1;
+            this.circularProgressBar.Location = new System.Drawing.Point(834, 8);
+            this.circularProgressBar.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar.Name = "circularProgressBar";
+            this.circularProgressBar.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar.OuterMargin = -25;
+            this.circularProgressBar.OuterWidth = 26;
+            this.circularProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.circularProgressBar.ProgressWidth = 5;
+            this.circularProgressBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.circularProgressBar.Size = new System.Drawing.Size(40, 40);
+            this.circularProgressBar.StartAngle = 270;
+            this.circularProgressBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBar.SubscriptText = ".23";
+            this.circularProgressBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar.SuperscriptText = "°C";
+            this.circularProgressBar.TabIndex = 2;
+            this.circularProgressBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBar.Value = 68;
             // 
             // label
             // 
@@ -113,43 +147,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // circularProgressBar
+            // pictureBoxFoto
             // 
-            this.circularProgressBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar.AnimationSpeed = 500;
-            this.circularProgressBar.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.circularProgressBar.InnerMargin = 2;
-            this.circularProgressBar.InnerWidth = -1;
-            this.circularProgressBar.Location = new System.Drawing.Point(673, 8);
-            this.circularProgressBar.MarqueeAnimationSpeed = 2000;
-            this.circularProgressBar.Name = "circularProgressBar";
-            this.circularProgressBar.OuterColor = System.Drawing.Color.Gray;
-            this.circularProgressBar.OuterMargin = -25;
-            this.circularProgressBar.OuterWidth = 26;
-            this.circularProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.circularProgressBar.ProgressWidth = 5;
-            this.circularProgressBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.circularProgressBar.Size = new System.Drawing.Size(40, 40);
-            this.circularProgressBar.StartAngle = 270;
-            this.circularProgressBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.circularProgressBar.SubscriptText = ".23";
-            this.circularProgressBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.circularProgressBar.SuperscriptText = "°C";
-            this.circularProgressBar.TabIndex = 2;
-            this.circularProgressBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.circularProgressBar.Value = 68;
+            this.pictureBoxFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFoto.Location = new System.Drawing.Point(733, 89);
+            this.pictureBoxFoto.Name = "pictureBoxFoto";
+            this.pictureBoxFoto.Size = new System.Drawing.Size(170, 137);
+            this.pictureBoxFoto.TabIndex = 4;
+            this.pictureBoxFoto.TabStop = false;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(725, 430);
+            this.ClientSize = new System.Drawing.Size(910, 430);
+            this.Controls.Add(this.pictureBoxFoto);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.menuStrip1);
@@ -164,6 +178,7 @@
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +194,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label;
         private CircularProgressBar.CircularProgressBar circularProgressBar;
+        private System.Windows.Forms.PictureBox pictureBoxFoto;
     }
 }
 
