@@ -1,0 +1,13 @@
+* v1.0
+
+13/06/18 (henrique)
+corrigido problemas de compatibilidade com x86 e SmoApplication
+
+
+12/06/18 (henrique)
+adicionado icone para executavel
+adicionado icone para janela principal
+substituido nome da janela principal de "form1" para "FormPrincipal"
+configurado solução para compilar para 32bits para evitar que não funcione em sistemas 64
+janela configuracoes e janela foto: ajeitado controlbox, minimizebox, titlebar etc
+adicionado versoes.txt e readme.txt

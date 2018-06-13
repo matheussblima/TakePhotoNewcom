@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfig));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,7 +42,7 @@
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxBDName = new System.Windows.Forms.TextBox();
             this.comboBoxInstancia = new System.Windows.Forms.ComboBox();
-            this.circularProgressBarServidor = new CircularProgressBar.CircularProgressBar();
+            this.circularProgressBarConfig = new CircularProgressBar.CircularProgressBar();
             this.timerProgresseBarServidor = new System.Windows.Forms.Timer(this.components);
             this.comboBoxAutenticacao = new System.Windows.Forms.ComboBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxPasswordCamera = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -162,37 +164,37 @@
             this.comboBoxInstancia.Size = new System.Drawing.Size(201, 21);
             this.comboBoxInstancia.TabIndex = 15;
             // 
-            // circularProgressBarServidor
+            // circularProgressBarConfig
             // 
-            this.circularProgressBarServidor.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBarServidor.AnimationSpeed = 500;
-            this.circularProgressBarServidor.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBarServidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBarServidor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBarServidor.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.circularProgressBarServidor.InnerMargin = 2;
-            this.circularProgressBarServidor.InnerWidth = -1;
-            this.circularProgressBarServidor.Location = new System.Drawing.Point(525, 12);
-            this.circularProgressBarServidor.MarqueeAnimationSpeed = 2000;
-            this.circularProgressBarServidor.Name = "circularProgressBarServidor";
-            this.circularProgressBarServidor.OuterColor = System.Drawing.Color.Gray;
-            this.circularProgressBarServidor.OuterMargin = -25;
-            this.circularProgressBarServidor.OuterWidth = 26;
-            this.circularProgressBarServidor.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.circularProgressBarServidor.ProgressWidth = 5;
-            this.circularProgressBarServidor.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.circularProgressBarServidor.Size = new System.Drawing.Size(40, 40);
-            this.circularProgressBarServidor.StartAngle = 270;
-            this.circularProgressBarServidor.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.circularProgressBarServidor.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBarServidor.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.circularProgressBarServidor.SubscriptText = ".23";
-            this.circularProgressBarServidor.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBarServidor.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.circularProgressBarServidor.SuperscriptText = "°C";
-            this.circularProgressBarServidor.TabIndex = 16;
-            this.circularProgressBarServidor.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.circularProgressBarServidor.Value = 68;
+            this.circularProgressBarConfig.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBarConfig.AnimationSpeed = 500;
+            this.circularProgressBarConfig.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBarConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBarConfig.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBarConfig.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.circularProgressBarConfig.InnerMargin = 2;
+            this.circularProgressBarConfig.InnerWidth = -1;
+            this.circularProgressBarConfig.Location = new System.Drawing.Point(375, 20);
+            this.circularProgressBarConfig.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBarConfig.Name = "circularProgressBarConfig";
+            this.circularProgressBarConfig.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBarConfig.OuterMargin = -25;
+            this.circularProgressBarConfig.OuterWidth = 26;
+            this.circularProgressBarConfig.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.circularProgressBarConfig.ProgressWidth = 5;
+            this.circularProgressBarConfig.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.circularProgressBarConfig.Size = new System.Drawing.Size(40, 40);
+            this.circularProgressBarConfig.StartAngle = 270;
+            this.circularProgressBarConfig.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.circularProgressBarConfig.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBarConfig.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBarConfig.SubscriptText = ".23";
+            this.circularProgressBarConfig.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBarConfig.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBarConfig.SuperscriptText = "°C";
+            this.circularProgressBarConfig.TabIndex = 16;
+            this.circularProgressBarConfig.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBarConfig.Value = 68;
             // 
             // timerProgresseBarServidor
             // 
@@ -213,7 +215,7 @@
             // buttonSalvar
             // 
             this.buttonSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSalvar.Location = new System.Drawing.Point(258, 471);
+            this.buttonSalvar.Location = new System.Drawing.Point(309, 471);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(106, 33);
             this.buttonSalvar.TabIndex = 18;
@@ -290,11 +292,22 @@
             this.textBoxPasswordCamera.Size = new System.Drawing.Size(201, 20);
             this.textBoxPasswordCamera.TabIndex = 26;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(13, 475);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 33);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Padrão";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 520);
+            this.ClientSize = new System.Drawing.Size(434, 520);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBoxPasswordCamera);
             this.Controls.Add(this.label3);
@@ -305,7 +318,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.comboBoxAutenticacao);
-            this.Controls.Add(this.circularProgressBarServidor);
+            this.Controls.Add(this.circularProgressBarConfig);
             this.Controls.Add(this.comboBoxInstancia);
             this.Controls.Add(this.textBoxBDName);
             this.Controls.Add(this.textBoxSenha);
@@ -318,8 +331,12 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormConfig";
-            this.Text = "FormConfig";
+            this.ShowInTaskbar = false;
+            this.Text = "TakePhotoNewcom - Configurações";
             this.Load += new System.EventHandler(this.FormConfig_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -340,7 +357,7 @@
         private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.TextBox textBoxBDName;
         private System.Windows.Forms.ComboBox comboBoxInstancia;
-        private CircularProgressBar.CircularProgressBar circularProgressBarServidor;
+        private CircularProgressBar.CircularProgressBar circularProgressBarConfig;
         private System.Windows.Forms.Timer timerProgresseBarServidor;
         private System.Windows.Forms.ComboBox comboBoxAutenticacao;
         private System.Windows.Forms.Button buttonSalvar;
@@ -352,5 +369,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBoxPasswordCamera;
+        private System.Windows.Forms.Button button1;
     }
 }

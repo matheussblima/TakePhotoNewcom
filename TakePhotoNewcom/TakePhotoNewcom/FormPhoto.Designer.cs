@@ -40,12 +40,12 @@
             this.axVLCPlugin21.Location = new System.Drawing.Point(12, 12);
             this.axVLCPlugin21.Name = "axVLCPlugin21";
             this.axVLCPlugin21.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axVLCPlugin21.OcxState")));
-            this.axVLCPlugin21.Size = new System.Drawing.Size(451, 318);
+            this.axVLCPlugin21.Size = new System.Drawing.Size(452, 318);
             this.axVLCPlugin21.TabIndex = 0;
             // 
             // button_TirarFoto
             // 
-            this.button_TirarFoto.Image = global::TakePhotoNewcom.Properties.Resources.photo_camera__1_;
+            this.button_TirarFoto.Image = global::TakePhotoNewcom.Properties.Resources.photo_camera;
             this.button_TirarFoto.Location = new System.Drawing.Point(208, 336);
             this.button_TirarFoto.Name = "button_TirarFoto";
             this.button_TirarFoto.Size = new System.Drawing.Size(59, 44);
@@ -61,9 +61,12 @@
             this.ClientSize = new System.Drawing.Size(477, 387);
             this.Controls.Add(this.button_TirarFoto);
             this.Controls.Add(this.axVLCPlugin21);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormPhoto";
-            this.Text = "FormPhoto";
+            this.ShowInTaskbar = false;
+            this.Text = "TakePhotoNewcom - Foto";
             this.Load += new System.EventHandler(this.FormPhoto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin21)).EndInit();
             this.ResumeLayout(false);

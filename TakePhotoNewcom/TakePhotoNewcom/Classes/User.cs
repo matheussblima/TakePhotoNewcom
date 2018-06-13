@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TakePhotoNewcom.Classes
 {
@@ -60,6 +61,8 @@ namespace TakePhotoNewcom.Classes
 
                 if (sqlConnection != null)
                 {
+                    // WHERE DATA_INCLUSAO > DATA ULTIMA PESQUISA
+
                     string sql = "SELECT id, n_identificador, nome, rg FROM pessoas";
                     SqlCommand cmd = sqlConnection.CreateCommand();
                     cmd.CommandType = CommandType.Text;
@@ -71,8 +74,9 @@ namespace TakePhotoNewcom.Classes
 
                 return null;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                MessageBox.Show("getAlluserssqldatadapter: " + e.Message);
                 return null;
             }
         }

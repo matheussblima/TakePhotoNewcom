@@ -9,11 +9,6 @@ namespace TakePhotoNewcom
 {
     public partial class FormConfig : Form
     {
-        public FormConfig()
-        {
-            InitializeComponent();
-        }
-
         static string keyLocalFoto = "LocalFoto";
         static string keyServidor = "Servidor";
         static string keyAutenticacao = "Autenticacao";
@@ -30,16 +25,19 @@ namespace TakePhotoNewcom
 
         ModifyRegistry modifyRegistry = new ModifyRegistry();
 
+        public FormConfig()
+        {
+            InitializeComponent();
+        }
+
         private void FormConfig_Load(object sender, EventArgs e)
         {
             Thread threadStartPage = new Thread(startPage);
             threadStartPage.Start();
 
-            
-
-            circularProgressBarServidor.Value = 0;
-            circularProgressBarServidor.Minimum = 0;
-            circularProgressBarServidor.Maximum = 100;
+            circularProgressBarConfig.Value = 0;
+            circularProgressBarConfig.Minimum = 0;
+            circularProgressBarConfig.Maximum = 100;
 
             string localFoto = modifyRegistry.Read(keyLocalFoto);
             string autenticacao = modifyRegistry.Read(keyAutenticacao);
@@ -121,7 +119,6 @@ namespace TakePhotoNewcom
             comboBoxInstancia.Enabled = false;
         }
 
-
         private void startPage()
         {
             timerProgresseBarServidor.Start();
@@ -157,16 +154,28 @@ namespace TakePhotoNewcom
             }
 
             timerProgresseBarServidor.Stop();
-            circularProgressBarServidor.Invoke((MethodInvoker)delegate() {
-                circularProgressBarServidor.Value = 0;
-                circularProgressBarServidor.Update();
+            circularProgressBarConfig.Invoke((MethodInvoker)delegate() {
+                circularProgressBarConfig.Value = 0;
+                circularProgressBarConfig.Update();
             });
         }
 
 
         private string[] ListLocalSqlInstances()
         {
-            DataTable table = SmoApplication.EnumAvailableSqlServers();
+            DataTable table = null;
+
+            table = SmoApplication.EnumAvailableSqlServers();
+
+            try
+            {
+                table = SmoApplication.EnumAvailableSqlServers();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("ListLocalSqlInstances: " + e.Message);
+                return null;
+            }
 
             string [] instances = new string[table.Rows.Count];
             int cont = 0;
@@ -197,8 +206,8 @@ namespace TakePhotoNewcom
 
         private void timerProgresseBarServidor_Tick(object sender, EventArgs e)
         {
-            circularProgressBarServidor.Increment(1);
-            circularProgressBarServidor.Update();
+            circularProgressBarConfig.Increment(1);
+            circularProgressBarConfig.Update();
         }
 
         private void buttonSalvar_Click(object sender, EventArgs e)
@@ -222,9 +231,6 @@ namespace TakePhotoNewcom
             {
                 MessageBox.Show("Campos em Branco");
             }
-
-
         }
-
     }
 }

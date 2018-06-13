@@ -40,3 +40,33 @@ C:\Users\Matheus Lima\Desktop\TakePhotoNewcom\TakePhotoNewcom\TakePhotoNewcom\ob
 C:\Users\Matheus Lima\Desktop\TakePhotoNewcom\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.csproj.ResolveComReference.cache
 C:\Users\Matheus Lima\Desktop\TakePhotoNewcom\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.FormPhoto.resources
 C:\Users\Matheus Lima\Desktop\TakePhotoNewcom\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.FormMain.resources
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\TakePhotoNewcom.exe.config
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\Interop.AXVLC.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\AxInterop.AXVLC.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.csproj.ResolveComReference.cache
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.exe
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.pdb
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\TakePhotoNewcom.exe
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\TakePhotoNewcom.pdb
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\CircularProgressBar.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Vlc.DotNet.Core.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Vlc.DotNet.Core.Interops.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\WinFormAnimation.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\CircularProgressBar.xml
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\WinFormAnimation.xml
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Interop.AXVLC.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\AxInterop.AXVLC.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.FormConfig.resources
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.FormPhoto.resources
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.Properties.Resources.resources
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\obj\Debug\TakePhotoNewcom.FormPrincipal.resources
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\circle_progressbar.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\Henrique\Desktop\TakePhotoNewcom-master\TakePhotoNewcom\TakePhotoNewcom\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
